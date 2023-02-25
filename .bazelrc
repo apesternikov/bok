@@ -1,0 +1,4 @@
+build --java_runtime_version=remotejdk_11
+build --nojava_header_compilation
+
+

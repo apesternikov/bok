@@ -1,0 +1,12 @@
+java_library(
+    name = "stringlist",
+    srcs = ["StringList.java"],
+    deps = ["//:lombok"],
+)
+
+java_binary(
+    name = "application",
+    srcs = ["Application.java"],
+    main_class = "com.example.bazel.lombok.stringlist.Application",
+    deps = ["stringlist"],
+)
